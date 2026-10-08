@@ -1,227 +1,1521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#062d1c">
-  <meta name="description" content="End of Service and Thanksgiving Ceremony in honour of Mr. Boakye Yiadom Boama, Headmaster of Okomfo Anokye Senior High School, Wiamoase.">
-  <title>Celebrating a Legacy | Mr. Boakye Yiadom Boama</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#062d1c" />
+    <meta
+      name="description"
+      content="End of Service and Thanksgiving Ceremony in honour of Mr. Boakye Yiadom Boama, Headmaster of Okomfo Anokye Senior High School, Wiamoase."
+    />
+    <title>Celebrating a Legacy | Mr. Boakye Yiadom Boama</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-  <style>
-    :root{
-      --forest:#052d1c; --forest2:#0a4b2e; --green:#0e6540;
-      --gold:#c79a3b; --gold2:#e7c56c; --cream:#faf6ea;
-      --paper:#fffdf8; --ink:#16231c; --muted:#69756d;
-      --line:rgba(199,154,59,.30); --serif:"Poppins",Arial,sans-serif;
-      --sans:"Poppins",Arial,sans-serif; --shadow:0 25px 80px rgba(0,35,20,.16);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:"Poppins",Arial,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
-    a{text-decoration:none;color:inherit} img{display:block;width:100%} button{font:inherit}
-    .progress{position:fixed;z-index:9999;top:0;left:0;height:3px;width:0;background:var(--gold2)}
+    <style>
+      :root {
+        --forest: #052d1c;
+        --forest2: #0a4b2e;
+        --green: #0e6540;
+        --gold: #c79a3b;
+        --gold2: #e7c56c;
+        --cream: #faf6ea;
+        --paper: #fffdf8;
+        --ink: #16231c;
+        --muted: #69756d;
+        --line: rgba(199, 154, 59, 0.3);
+        --serif: "Poppins", Arial, sans-serif;
+        --sans: "Poppins", Arial, sans-serif;
+        --shadow: 0 25px 80px rgba(0, 35, 20, 0.16);
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        color: var(--ink);
+        background: var(--cream);
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      button {
+        font: inherit;
+      }
+      .progress {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background: var(--gold2);
+      }
 
-    /* Navigation */
-    .nav{position:fixed;z-index:1000;top:0;left:0;width:100%;padding:15px 4%;transition:.35s ease}
-    .nav.scrolled{background:rgba(5,45,28,.95);backdrop-filter:blur(18px);box-shadow:0 10px 35px rgba(0,0,0,.15)}
-    .nav-inner{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}
-    .brand{display:flex;align-items:center;gap:12px;color:#fff;min-width:230px}
-    .brand-mark{width:42px;height:42px;border:1px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:17px;flex:none}
-    .brand-text{font-size:.70rem;line-height:1.15;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
-    .brand-text span{display:block;color:var(--gold2);font-size:.58rem;margin-top:4px}
-    .nav-links{display:flex;gap:21px;color:rgba(255,255,255,.82);font-size:.76rem;font-weight:600;align-items:center}
-    .nav-links a{transition:.2s}.nav-links a:hover{color:var(--gold2)}
-    .nav-cta{padding:10px 16px;border:1px solid var(--gold2);border-radius:999px;color:#fff;font-size:.74rem;font-weight:700;white-space:nowrap}
-    .menu-btn{display:none;background:none;border:1px solid rgba(231,197,108,.6);color:#fff;width:42px;height:42px;border-radius:50%;cursor:pointer}
-    .mobile-menu{display:none;background:rgba(5,45,28,.98);padding:10px 5% 20px}
-    .mobile-menu a{display:block;color:#fff;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.85rem}
-    .mobile-menu.open{display:block}
+      /* Navigation */
+      .nav {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 4%;
+        transition: 0.35s ease;
+      }
+      .nav.scrolled {
+        background: rgba(5, 45, 28, 0.95);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+      }
+      .nav-inner {
+        max-width: 1240px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+        min-width: 230px;
+      }
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--gold2);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--gold2);
+        font-size: 17px;
+        flex: none;
+      }
+      .brand-text {
+        font-size: 0.7rem;
+        line-height: 1.15;
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+      .brand-text span {
+        display: block;
+        color: var(--gold2);
+        font-size: 0.58rem;
+        margin-top: 4px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 21px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.76rem;
+        font-weight: 600;
+        align-items: center;
+      }
+      .nav-links a {
+        transition: 0.2s;
+      }
+      .nav-links a:hover {
+        color: var(--gold2);
+      }
+      .nav-cta {
+        padding: 10px 16px;
+        border: 1px solid var(--gold2);
+        border-radius: 999px;
+        color: #fff;
+        font-size: 0.74rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .menu-btn {
+        display: none;
+        background: none;
+        border: 1px solid rgba(231, 197, 108, 0.6);
+        color: #fff;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .mobile-menu {
+        display: none;
+        background: rgba(5, 45, 28, 0.98);
+        padding: 10px 5% 20px;
+      }
+      .mobile-menu a {
+        display: block;
+        color: #fff;
+        padding: 13px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 0.85rem;
+      }
+      .mobile-menu.open {
+        display: block;
+      }
 
-    /* Hero */
-    .hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:var(--forest);color:#fff}
-    .hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,24,14,.95) 0%,rgba(2,24,14,.72) 38%,rgba(2,24,14,.12) 82%),linear-gradient(0deg,rgba(2,20,12,.95),transparent 65%),url("assets/hero-kente.jpg") center 28%/cover no-repeat;transform:scale(1.035)}
-    .hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(231,197,108,.20),transparent 24%),linear-gradient(125deg,transparent 55%,rgba(231,197,108,.08))}
-    .hero-frame{position:absolute;inset:24px;border:1px solid rgba(231,197,108,.48);pointer-events:none}
-    .hero-frame:before,.hero-frame:after{content:"";position:absolute;background:var(--gold2)}
-    .hero-frame:before{left:24px;top:-1px;width:100px;height:2px}.hero-frame:after{right:24px;bottom:-1px;width:100px;height:2px}
-    .hero-content{position:relative;z-index:3;width:min(1180px,92%);margin:auto;padding:160px 0 85px}
-    .kicker{display:flex;align-items:center;gap:12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.19em;font-size:.68rem;font-weight:800}
-    .kicker:before{content:"";width:45px;height:1px;background:var(--gold2)}
-    .hero h1{font-family:var(--serif);font-size:clamp(3.7rem,8vw,8rem);line-height:.78;font-weight:600;letter-spacing:-.045em;max-width:950px;margin-top:25px}
-    .hero h1 em{display:block;color:var(--gold2);font-size:.64em;margin-top:15px;font-style:normal}
-    .hero-intro{max-width:670px;margin:31px 0;color:rgba(255,255,255,.84);font-size:1rem;line-height:1.8}
-    .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{min-height:50px;padding:0 21px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:.80rem;transition:.25s ease;border:0;cursor:pointer}
-    .btn-gold{background:var(--gold);color:#172216}.btn-gold:hover{background:var(--gold2);transform:translateY(-3px)}
-    .btn-outline{border:1px solid rgba(255,255,255,.42);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(10px)}.btn-outline:hover{background:rgba(255,255,255,.14);transform:translateY(-3px)}
-    .hero-date{position:absolute;right:5%;bottom:62px;z-index:4;width:142px;height:142px;border:1px solid var(--gold2);border-radius:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:rgba(4,39,24,.45);backdrop-filter:blur(8px)}
-    .hero-date strong{font-family:var(--serif);font-size:2.15rem;color:var(--gold2);line-height:1}.hero-date span{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;margin-top:7px}.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:.58rem;text-transform:uppercase;letter-spacing:.22em;color:rgba(255,255,255,.55)}
+      /* Hero */
+      .hero {
+        min-height: 100svh;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: var(--forest);
+        color: #fff;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(2, 24, 14, 0.95) 0%,
+            rgba(2, 24, 14, 0.72) 38%,
+            rgba(2, 24, 14, 0.12) 82%
+          ),
+          linear-gradient(0deg, rgba(2, 20, 12, 0.95), transparent 65%),
+          url("assets/hero-kente.jpg") center 28% / cover no-repeat;
+        transform: scale(1.035);
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at 80% 18%,
+            rgba(231, 197, 108, 0.2),
+            transparent 24%
+          ),
+          linear-gradient(125deg, transparent 55%, rgba(231, 197, 108, 0.08));
+      }
+      .hero-frame {
+        position: absolute;
+        inset: 24px;
+        border: 1px solid rgba(231, 197, 108, 0.48);
+        pointer-events: none;
+      }
+      .hero-frame:before,
+      .hero-frame:after {
+        content: "";
+        position: absolute;
+        background: var(--gold2);
+      }
+      .hero-frame:before {
+        left: 24px;
+        top: -1px;
+        width: 100px;
+        height: 2px;
+      }
+      .hero-frame:after {
+        right: 24px;
+        bottom: -1px;
+        width: 100px;
+        height: 2px;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 3;
+        width: min(1180px, 92%);
+        margin: auto;
+        padding: 160px 0 85px;
+      }
+      .kicker {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--gold2);
+        text-transform: uppercase;
+        letter-spacing: 0.19em;
+        font-size: 0.68rem;
+        font-weight: 800;
+      }
+      .kicker:before {
+        content: "";
+        width: 45px;
+        height: 1px;
+        background: var(--gold2);
+      }
+      .hero h1 {
+        font-family: var(--serif);
+        font-size: clamp(3.7rem, 8vw, 8rem);
+        line-height: 0.78;
+        font-weight: 600;
+        letter-spacing: -0.045em;
+        max-width: 950px;
+        margin-top: 25px;
+      }
+      .hero h1 em {
+        display: block;
+        color: var(--gold2);
+        font-size: 0.64em;
+        margin-top: 15px;
+        font-style: normal;
+      }
+      .hero-intro {
+        max-width: 670px;
+        margin: 31px 0;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+      .hero-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        min-height: 50px;
+        padding: 0 21px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        transition: 0.25s ease;
+        border: 0;
+        cursor: pointer;
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: #172216;
+      }
+      .btn-gold:hover {
+        background: var(--gold2);
+        transform: translateY(-3px);
+      }
+      .btn-outline {
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        color: #fff;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+      }
+      .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.14);
+        transform: translateY(-3px);
+      }
+      .hero-date {
+        position: absolute;
+        right: 5%;
+        bottom: 62px;
+        z-index: 4;
+        width: 142px;
+        height: 142px;
+        border: 1px solid var(--gold2);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(4, 39, 24, 0.45);
+        backdrop-filter: blur(8px);
+      }
+      .hero-date strong {
+        font-family: var(--serif);
+        font-size: 2.15rem;
+        color: var(--gold2);
+        line-height: 1;
+      }
+      .hero-date span {
+        font-size: 0.58rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-top: 7px;
+      }
+      .scroll {
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.58rem;
+        text-transform: uppercase;
+        letter-spacing: 0.22em;
+        color: rgba(255, 255, 255, 0.55);
+      }
 
-    /* General */
-    .section{padding:105px 0}.wrap{width:min(1160px,92%);margin:auto}
-    .kicker-dark{color:var(--green);font-size:.67rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
-    .title{font-family:var(--serif);color:var(--forest);font-size:clamp(2.7rem,5vw,4.8rem);line-height:.91;font-weight:600;letter-spacing:-.03em}
-    .lead{color:var(--muted);max-width:680px;margin-top:20px;font-size:.98rem;line-height:1.75}
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
+      /* General */
+      .section {
+        padding: 105px 0;
+      }
+      .wrap {
+        width: min(1160px, 92%);
+        margin: auto;
+      }
+      .kicker-dark {
+        color: var(--green);
+        font-size: 0.67rem;
+        font-weight: 800;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      .title {
+        font-family: var(--serif);
+        color: var(--forest);
+        font-size: clamp(2.7rem, 5vw, 4.8rem);
+        line-height: 0.91;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+      }
+      .lead {
+        color: var(--muted);
+        max-width: 680px;
+        margin-top: 20px;
+        font-size: 0.98rem;
+        line-height: 1.75;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
 
-    /* Invitation */
-    .invitation{background:var(--paper)}.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-    .ornament{color:var(--gold);font-size:1.2rem;margin:17px 0}.inv-copy p{color:#5d6961;line-height:1.85;margin-top:18px}
-    .quote{margin-top:30px;padding:24px 0 24px 24px;border-left:2px solid var(--gold);font-family:var(--serif);font-size:1.55rem;line-height:1.2;color:var(--forest)}
-    .info-panel{background:var(--forest);color:#fff;padding:46px;position:relative;box-shadow:var(--shadow);overflow:hidden}
-    .info-panel:before{content:"";position:absolute;inset:15px;border:1px solid rgba(231,197,108,.3);pointer-events:none}.info-panel h3{font-family:var(--serif);font-size:2.7rem;color:var(--gold2);line-height:.95}
-    .info-list{margin-top:30px}.info-row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12)}.info-row i{width:22px;color:var(--gold2);padding-top:3px}.info-row small{display:block;color:rgba(255,255,255,.48);font-size:.60rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800}.info-row strong{display:block;margin-top:3px;font-size:.88rem;line-height:1.45}
+      /* Invitation */
+      .invitation {
+        background: var(--paper);
+      }
+      .inv-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+      }
+      .ornament {
+        color: var(--gold);
+        font-size: 1.2rem;
+        margin: 17px 0;
+      }
+      .inv-copy p {
+        color: #5d6961;
+        line-height: 1.85;
+        margin-top: 18px;
+      }
+      .quote {
+        margin-top: 30px;
+        padding: 24px 0 24px 24px;
+        border-left: 2px solid var(--gold);
+        font-family: var(--serif);
+        font-size: 1.55rem;
+        line-height: 1.2;
+        color: var(--forest);
+      }
+      .info-panel {
+        background: var(--forest);
+        color: #fff;
+        padding: 46px;
+        position: relative;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+      .info-panel:before {
+        content: "";
+        position: absolute;
+        inset: 15px;
+        border: 1px solid rgba(231, 197, 108, 0.3);
+        pointer-events: none;
+      }
+      .info-panel h3 {
+        font-family: var(--serif);
+        font-size: 2.7rem;
+        color: var(--gold2);
+        line-height: 0.95;
+      }
+      .info-list {
+        margin-top: 30px;
+      }
+      .info-row {
+        display: flex;
+        gap: 16px;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .info-row i {
+        width: 22px;
+        color: var(--gold2);
+        padding-top: 3px;
+      }
+      .info-row small {
+        display: block;
+        color: rgba(255, 255, 255, 0.48);
+        font-size: 0.6rem;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      .info-row strong {
+        display: block;
+        margin-top: 3px;
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
 
-    /* Profile */
-    .profile{background:#f0eadb}.profile-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:72px;align-items:start}
-    .portrait-wrap{position:relative}.portrait-wrap img{height:610px;object-fit:cover;object-position:center top;box-shadow:var(--shadow);background:#d8d2c4}.portrait-wrap:after{content:"";position:absolute;z-index:0;left:-18px;bottom:-18px;width:80%;height:78%;border:1px solid var(--gold)}
-    .portrait-wrap img{position:relative;z-index:1}.profile-copy p{margin-top:18px;color:#5d6961;line-height:1.82}.signature{font-family:var(--serif);font-size:2rem;color:var(--forest);font-style:italic;margin-top:28px}
-    .profile-intro{font-family:var(--serif);font-size:1.45rem;color:var(--forest);line-height:1.3;margin-top:20px}
-    .fact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}.fact{background:rgba(255,255,255,.72);border:1px solid rgba(199,154,59,.22);padding:17px}.fact strong{display:block;font-family:var(--serif);font-size:1.55rem;color:var(--forest)}.fact span{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);line-height:1.4}
-    .timeline{margin-top:40px;border-left:1px solid rgba(199,154,59,.55);padding-left:25px}.timeline-item{position:relative;padding:0 0 25px}.timeline-item:before{content:"";position:absolute;left:-31px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #f0eadb}.timeline-year{font-weight:800;color:var(--green);font-size:.70rem;letter-spacing:.13em}.timeline h4{font-family:var(--serif);font-size:1.45rem;color:var(--forest);margin-top:2px}.timeline p{font-size:.82rem!important;margin-top:4px!important}
+      /* Profile */
+      .profile {
+        background: #f0eadb;
+      }
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: 72px;
+        align-items: start;
+      }
+      .portrait-wrap {
+        position: relative;
+      }
+      .portrait-wrap img {
+        height: 610px;
+        object-fit: cover;
+        object-position: center top;
+        box-shadow: var(--shadow);
+        background: #d8d2c4;
+      }
+      .portrait-wrap:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: -18px;
+        bottom: -18px;
+        width: 80%;
+        height: 78%;
+        border: 1px solid var(--gold);
+      }
+      .portrait-wrap img {
+        position: relative;
+        z-index: 1;
+      }
+      .profile-copy p {
+        margin-top: 18px;
+        color: #5d6961;
+        line-height: 1.82;
+      }
+      .signature {
+        font-family: var(--serif);
+        font-size: 2rem;
+        color: var(--forest);
+        font-style: italic;
+        margin-top: 28px;
+      }
+      .profile-intro {
+        font-family: var(--serif);
+        font-size: 1.45rem;
+        color: var(--forest);
+        line-height: 1.3;
+        margin-top: 20px;
+      }
+      .fact-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 28px;
+      }
+      .fact {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid rgba(199, 154, 59, 0.22);
+        padding: 17px;
+      }
+      .fact strong {
+        display: block;
+        font-family: var(--serif);
+        font-size: 1.55rem;
+        color: var(--forest);
+      }
+      .fact span {
+        font-size: 0.66rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      .timeline {
+        margin-top: 40px;
+        border-left: 1px solid rgba(199, 154, 59, 0.55);
+        padding-left: 25px;
+      }
+      .timeline-item {
+        position: relative;
+        padding: 0 0 25px;
+      }
+      .timeline-item:before {
+        content: "";
+        position: absolute;
+        left: -31px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--gold);
+        box-shadow: 0 0 0 5px #f0eadb;
+      }
+      .timeline-year {
+        font-weight: 800;
+        color: var(--green);
+        font-size: 0.7rem;
+        letter-spacing: 0.13em;
+      }
+      .timeline h4 {
+        font-family: var(--serif);
+        font-size: 1.45rem;
+        color: var(--forest);
+        margin-top: 2px;
+      }
+      .timeline p {
+        font-size: 0.82rem !important;
+        margin-top: 4px !important;
+      }
 
-    /* Credentials */
-    .credentials{background:var(--paper)}.credential-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}.credential-card{padding:29px;background:#fff;border:1px solid rgba(199,154,59,.18);box-shadow:0 12px 35px rgba(0,35,20,.05)}.credential-card h3{font-family:var(--serif);font-size:1.8rem;color:var(--forest);margin-bottom:12px}.credential-card p,.credential-card li{color:#5e6961;font-size:.84rem;line-height:1.7}.credential-card ul{padding-left:18px}.rank-list{display:grid;grid-template-columns:100px 1fr;gap:7px 16px}.rank-list strong{color:var(--green);font-size:.78rem}.rank-list span{font-size:.82rem;color:#5e6961}
+      /* Credentials */
+      .credentials {
+        background: var(--paper);
+      }
+      .credential-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 42px;
+      }
+      .credential-card {
+        padding: 29px;
+        background: #fff;
+        border: 1px solid rgba(199, 154, 59, 0.18);
+        box-shadow: 0 12px 35px rgba(0, 35, 20, 0.05);
+      }
+      .credential-card h3 {
+        font-family: var(--serif);
+        font-size: 1.8rem;
+        color: var(--forest);
+        margin-bottom: 12px;
+      }
+      .credential-card p,
+      .credential-card li {
+        color: #5e6961;
+        font-size: 0.84rem;
+        line-height: 1.7;
+      }
+      .credential-card ul {
+        padding-left: 18px;
+      }
+      .rank-list {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 7px 16px;
+      }
+      .rank-list strong {
+        color: var(--green);
+        font-size: 0.78rem;
+      }
+      .rank-list span {
+        font-size: 0.82rem;
+        color: #5e6961;
+      }
 
-    /* Gallery */
-    .gallery{background:#fffdf8}.gallery-top{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:40px}.gallery-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;grid-template-rows:280px 280px;gap:14px}.gallery-item{position:relative;overflow:hidden;background:#ddd}.gallery-item.large{grid-row:span 2}.gallery-item img{height:100%;object-fit:cover;transition:.65s ease}.gallery-item:hover img{transform:scale(1.07)}.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.35));pointer-events:none}
+      /* Gallery */
+      .gallery {
+        background: #fffdf8;
+      }
+      .gallery-top {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr 0.7fr;
+        grid-template-rows: 280px 280px;
+        gap: 14px;
+      }
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        background: #ddd;
+      }
+      .gallery-item.large {
+        grid-row: span 2;
+      }
+      .gallery-item img {
+        height: 100%;
+        object-fit: cover;
+        transition: 0.65s ease;
+      }
+      .gallery-item:hover img {
+        transform: scale(1.07);
+      }
+      .gallery-item:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 55%,
+          rgba(0, 0, 0, 0.35)
+        );
+        pointer-events: none;
+      }
 
-    /* Programme */
-    .programme{background:#f4efe2}.programme-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.programme-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}.programme-part{display:grid;grid-template-columns:76px 1fr;gap:22px;background:var(--paper);border:1px solid rgba(199,154,59,.2);padding:30px;box-shadow:0 12px 35px rgba(0,35,20,.06);transition:.25s ease}.programme-part:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(0,35,20,.1)}.part-number{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--gold2);font-family:var(--serif);font-size:1.45rem}.part-title{font-family:var(--serif);font-size:1.75rem;color:var(--forest);font-weight:700;border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:13px}.part-body ol{padding-left:20px;color:#5e6961;font-size:.85rem;line-height:1.75}.part-body ol li{padding-left:4px;margin:2px 0}.part-body ul{padding-left:22px;margin-top:3px}.part-body ul li{font-size:.80rem}.programme-footer{margin-top:25px;padding:22px;text-align:center;background:var(--forest);color:rgba(255,255,255,.82);font-family:var(--serif);font-size:1.25rem}.programme-footer i{color:var(--gold2);margin-right:8px}
-    .mc-strip{margin-top:16px;background:rgba(5,45,28,.05);border:1px solid rgba(199,154,59,.22);padding:22px;text-align:center}.mc-strip small{display:block;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--green);font-size:.60rem}.mc-strip strong{display:block;font-family:var(--serif);font-size:1.25rem;color:var(--forest);margin-top:7px}
+      /* Programme */
+      .programme {
+        background: #f4efe2;
+      }
+      .programme-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+        margin-bottom: 42px;
+      }
+      .programme-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .programme-part {
+        display: grid;
+        grid-template-columns: 76px 1fr;
+        gap: 22px;
+        background: var(--paper);
+        border: 1px solid rgba(199, 154, 59, 0.2);
+        padding: 30px;
+        box-shadow: 0 12px 35px rgba(0, 35, 20, 0.06);
+        transition: 0.25s ease;
+      }
+      .programme-part:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 45px rgba(0, 35, 20, 0.1);
+      }
+      .part-number {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--forest);
+        color: var(--gold2);
+        font-family: var(--serif);
+        font-size: 1.45rem;
+      }
+      .part-title {
+        font-family: var(--serif);
+        font-size: 1.75rem;
+        color: var(--forest);
+        font-weight: 700;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 9px;
+        margin-bottom: 13px;
+      }
+      .part-body ol {
+        padding-left: 20px;
+        color: #5e6961;
+        font-size: 0.85rem;
+        line-height: 1.75;
+      }
+      .part-body ol li {
+        padding-left: 4px;
+        margin: 2px 0;
+      }
+      .part-body ul {
+        padding-left: 22px;
+        margin-top: 3px;
+      }
+      .part-body ul li {
+        font-size: 0.8rem;
+      }
+      .programme-footer {
+        margin-top: 25px;
+        padding: 22px;
+        text-align: center;
+        background: var(--forest);
+        color: rgba(255, 255, 255, 0.82);
+        font-family: var(--serif);
+        font-size: 1.25rem;
+      }
+      .programme-footer i {
+        color: var(--gold2);
+        margin-right: 8px;
+      }
+      .mc-strip {
+        margin-top: 16px;
+        background: rgba(5, 45, 28, 0.05);
+        border: 1px solid rgba(199, 154, 59, 0.22);
+        padding: 22px;
+        text-align: center;
+      }
+      .mc-strip small {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-weight: 800;
+        color: var(--green);
+        font-size: 0.6rem;
+      }
+      .mc-strip strong {
+        display: block;
+        font-family: var(--serif);
+        font-size: 1.25rem;
+        color: var(--forest);
+        margin-top: 7px;
+      }
 
-    /* Official flyer */
-    .official{background:var(--forest)}.official-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}.official-copy .title{color:#fff}.official-copy p{color:rgba(255,255,255,.7);margin-top:20px;line-height:1.8}.flyer{background:#fff;padding:9px;box-shadow:0 25px 70px rgba(0,0,0,.3)}.flyer img{max-height:700px;object-fit:contain}
+      /* Official flyer */
+      .official {
+        background: var(--forest);
+      }
+      .official-grid {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .official-copy .title {
+        color: #fff;
+      }
+      .official-copy p {
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 20px;
+        line-height: 1.8;
+      }
+      .flyer {
+        background: #fff;
+        padding: 9px;
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+      }
+      .flyer img {
+        max-height: 700px;
+        object-fit: contain;
+      }
 
-    /* RSVP / footer */
-    .final{background:radial-gradient(circle at 15% 30%,rgba(199,154,59,.14),transparent 25%),var(--cream);text-align:center}.final .title{max-width:800px;margin:auto}.final p{max-width:700px;margin:20px auto 30px;color:var(--muted);line-height:1.8}.rsvp{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.contact{margin-top:35px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap;color:var(--forest);font-weight:700;font-size:.82rem}.contact span{display:inline-flex;align-items:center;gap:8px}.contact i{color:var(--gold)}footer{background:#031d12;color:rgba(255,255,255,.5);padding:30px 0}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:.70rem}.footer strong{color:#fff}.top{position:fixed;right:22px;bottom:22px;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold2);background:var(--forest);color:var(--gold2);display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s;z-index:900}.top.show{opacity:1;pointer-events:auto}
+      /* RSVP / footer */
+      .final {
+        background:
+          radial-gradient(
+            circle at 15% 30%,
+            rgba(199, 154, 59, 0.14),
+            transparent 25%
+          ),
+          var(--cream);
+        text-align: center;
+      }
+      .final .title {
+        max-width: 800px;
+        margin: auto;
+      }
+      .final p {
+        max-width: 700px;
+        margin: 20px auto 30px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      .rsvp {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .contact {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        flex-wrap: wrap;
+        color: var(--forest);
+        font-weight: 700;
+        font-size: 0.82rem;
+      }
+      .contact span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .contact i {
+        color: var(--gold);
+      }
+      footer {
+        background: #031d12;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 30px 0;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        font-size: 0.7rem;
+      }
+      .footer strong {
+        color: #fff;
+      }
+      .top {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid var(--gold2);
+        background: var(--forest);
+        color: var(--gold2);
+        display: grid;
+        place-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.25s;
+        z-index: 900;
+      }
+      .top.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
 
-    @media(max-width:950px){.nav-links,.nav-cta{display:none}.menu-btn{display:block}.inv-grid,.profile-grid,.official-grid{grid-template-columns:1fr;gap:48px}.portrait-wrap{max-width:620px}.portrait-wrap img{height:540px}.credential-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:300px 300px 300px}.gallery-item.large{grid-row:span 1;grid-column:span 2}.programme-list{grid-template-columns:1fr}.programme-heading{display:block}.programme-heading .lead{margin-top:18px}}
-    @media(max-width:560px){.hero-frame{inset:12px}.hero-content{padding-top:130px}.hero h1{font-size:3.8rem}.hero-date{display:none}.section{padding:76px 0}.info-panel{padding:34px 25px}.fact-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr;grid-template-rows:330px 250px 250px 250px}.gallery-item.large{grid-column:auto}.portrait-wrap img{height:460px}.programme-part{grid-template-columns:58px 1fr;padding:22px 18px;gap:14px}.part-number{width:48px;height:48px;font-size:1.2rem}.part-title{font-size:1.45rem}.footer{display:block;text-align:center}.footer>*+*{margin-top:8px}.brand{min-width:0}.brand-text{font-size:.60rem}.brand-text span{font-size:.50rem}}
-  </style>
-</head>
-<body>
-  <div class="progress" id="progress"></div>
+      @media (max-width: 950px) {
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+        .menu-btn {
+          display: block;
+        }
+        .inv-grid,
+        .profile-grid,
+        .official-grid {
+          grid-template-columns: 1fr;
+          gap: 48px;
+        }
+        .portrait-wrap {
+          max-width: 620px;
+        }
+        .portrait-wrap img {
+          height: 540px;
+        }
+        .credential-grid {
+          grid-template-columns: 1fr;
+        }
+        .gallery-grid {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 300px 300px 300px;
+        }
+        .gallery-item.large {
+          grid-row: span 1;
+          grid-column: span 2;
+        }
+        .programme-list {
+          grid-template-columns: 1fr;
+        }
+        .programme-heading {
+          display: block;
+        }
+        .programme-heading .lead {
+          margin-top: 18px;
+        }
+      }
+      @media (max-width: 560px) {
+        .hero-frame {
+          inset: 12px;
+        }
+        .hero-content {
+          padding-top: 130px;
+        }
+        .hero h1 {
+          font-size: 3.8rem;
+        }
+        .hero-date {
+          display: none;
+        }
+        .section {
+          padding: 76px 0;
+        }
+        .info-panel {
+          padding: 34px 25px;
+        }
+        .fact-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .gallery-grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: 330px 250px 250px 250px;
+        }
+        .gallery-item.large {
+          grid-column: auto;
+        }
+        .portrait-wrap img {
+          height: 460px;
+        }
+        .programme-part {
+          grid-template-columns: 58px 1fr;
+          padding: 22px 18px;
+          gap: 14px;
+        }
+        .part-number {
+          width: 48px;
+          height: 48px;
+          font-size: 1.2rem;
+        }
+        .part-title {
+          font-size: 1.45rem;
+        }
+        .footer {
+          display: block;
+          text-align: center;
+        }
+        .footer > * + * {
+          margin-top: 8px;
+        }
+        .brand {
+          min-width: 0;
+        }
+        .brand-text {
+          font-size: 0.6rem;
+        }
+        .brand-text span {
+          font-size: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
 
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#top" class="brand">
-        <div class="brand-mark"><i class="fa-solid fa-feather-pointed"></i></div>
-        <div class="brand-text">Okomfo Anokye SHS<span>Wiamoase · Ghana Education Service</span></div>
-      </a>
-      <div class="nav-links">
-        <a href="#invitation">Invitation</a><a href="#profile">Profile</a><a href="#legacy">Legacy</a>
-        <a href="#gallery">Gallery</a><a href="#programme">Programme</a><a href="#rsvp">RSVP</a>
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#top" class="brand">
+          <div class="brand-mark">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <div class="brand-text">
+            Okomfo Anokye SHS<span>Wiamoase · Ghana Education Service</span>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#invitation">Invitation</a><a href="#profile">Profile</a
+          ><a href="#legacy">Legacy</a> <a href="#gallery">Gallery</a
+          ><a href="#programme">Programme</a><a href="#rsvp">RSVP</a>
+        </div>
+        <a class="nav-cta" href="#rsvp">You Are Invited</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <a class="nav-cta" href="#rsvp">You Are Invited</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#invitation">Invitation</a><a href="#profile">Headmaster's Profile</a><a href="#legacy">Legacy</a>
-      <a href="#gallery">Gallery</a><a href="#programme">Programme</a><a href="#rsvp">RSVP</a>
-    </div>
-  </nav>
-
-  <header class="hero" id="top">
-    <div class="hero-bg"></div><div class="hero-overlay"></div><div class="hero-frame"></div>
-    <div class="hero-content">
-      <div class="kicker">Okomfo Anokye Senior High School · Wiamoase</div>
-      <h1>Celebrating a Legacy<em>End of Service &amp; Thanksgiving Ceremony</em></h1>
-      <p class="hero-intro">A distinguished gathering of gratitude, thanksgiving and celebration in honour of <strong>Mr. Boakye Yiadom Boama</strong>, Headmaster of Okomfo Anokye Senior High School.</p>
-      <div class="hero-buttons"><a href="#invitation" class="btn btn-gold"><i class="fa-regular fa-envelope"></i> Read the Invitation</a><a href="#rsvp" class="btn btn-outline"><i class="fa-regular fa-calendar-check"></i> Confirm Attendance</a></div>
-    </div>
-    <div class="hero-date"><strong>09</strong><span>October · 2026</span></div><div class="scroll">Discover the celebration ↓</div>
-  </header>
-
-  <main>
-    <section class="section invitation" id="invitation"><div class="wrap inv-grid reveal">
-      <div class="inv-copy"><div class="kicker-dark">A cordial invitation</div><h2 class="title">Come and share<br>this special moment.</h2><div class="ornament">✦ ───────── ✦</div>
-        <p>The Board of Governors, Nananom, PTA, Assistant Headmasters/Mistress, Staff, Old Students and Students of Okomfo Anokye Senior High School cordially invite you to an occasion of appreciation, thanksgiving and celebration.</p>
-        <p>Join us as we honour a chapter of dedicated leadership and service. Come with your greetings, your memories and your good wishes—and help us make this occasion truly memorable.</p>
-        <div class="quote">“Some journeys deserve to be celebrated, and some service deserves to be remembered.”</div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#invitation">Invitation</a
+        ><a href="#profile">Headmaster's Profile</a><a href="#legacy">Legacy</a>
+        <a href="#gallery">Gallery</a><a href="#programme">Programme</a
+        ><a href="#rsvp">RSVP</a>
       </div>
-      <aside class="info-panel"><h3>Save the<br>date.</h3><div class="info-list">
-        <div class="info-row"><i class="fa-regular fa-calendar"></i><div><small>Date</small><strong>Friday, 9th October 2026</strong></div></div>
-        <div class="info-row"><i class="fa-regular fa-clock"></i><div><small>Time</small><strong>9:00 AM</strong></div></div>
-        <div class="info-row"><i class="fa-solid fa-location-dot"></i><div><small>Venue</small><strong>Okomfo Anokye Senior High School, Wiamoase</strong></div></div>
-      </div></aside>
-    </div></section>
+    </nav>
 
-    <section class="section profile" id="profile"><div class="wrap profile-grid reveal">
-      <div class="portrait-wrap"><img src="assets/formal-portrait.jpg" alt="Formal portrait of Mr. Boakye Yiadom Boama"></div>
-      <div class="profile-copy"><div class="kicker-dark">In honour of · Profile</div><h2 class="title">Mr. Boakye<br>Yiadom Boama</h2>
-        <p class="profile-intro">A life shaped by humble beginnings, education, service, leadership and a deep commitment to Catholic values.</p>
-        <p>Mr. Boakye Yiadom Boama was born on 21 October 1966 to the late Maame Afia Pomaa of Nsuta Asuafu and the late Papa Akwasi Tetewu Boateng of Sekyere Beposo. He is the third of nine siblings, married to Mrs. Hanna Adu Boakye, and a father of eight children.</p>
-        <p>His educational journey began at Asuafu Salvation Army Primary School, continued through Asuafu L/A Middle School and Nsutaman Catholic Secondary School, and later led him to Tweneboa Kodua Secondary School for sixth-form education.</p>
-        <div class="fact-grid"><div class="fact"><strong>1966</strong><span>Year of birth</span></div><div class="fact"><strong>1993</strong><span>Joined Ghana Education Service</span></div><div class="fact"><strong>2019</strong><span>Joined OASHS as Headmaster</span></div></div>
-        <div class="signature">With gratitude &amp; appreciation</div>
+    <header class="hero" id="top">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-frame"></div>
+      <div class="hero-content">
+        <div class="kicker">Okomfo Anokye Senior High School · Wiamoase</div>
+        <h1>
+          Celebrating a Legacy<em
+            >End of Service &amp; Thanksgiving Ceremony</em
+          >
+        </h1>
+        <p class="hero-intro">
+          A distinguished gathering of gratitude, thanksgiving and celebration
+          in honour of <strong>Mr. Boakye Yiadom Boama</strong>, Headmaster of
+          Okomfo Anokye Senior High School.
+        </p>
+        <div class="hero-buttons">
+          <a href="#invitation" class="btn btn-gold"
+            ><i class="fa-regular fa-envelope"></i> Read the Invitation</a
+          ><a href="#rsvp" class="btn btn-outline"
+            ><i class="fa-regular fa-calendar-check"></i> Confirm Attendance</a
+          >
+        </div>
       </div>
-    </div></section>
-
-    <section class="section credentials" id="legacy"><div class="wrap reveal">
-      <div class="kicker-dark">A distinguished journey</div><h2 class="title">Education, leadership<br>&amp; service.</h2>
-      <p class="lead">The official profile records a career spanning classroom teaching, school administration, educational research, examination service and community leadership.</p>
-      <div class="timeline">
-        <div class="timeline-item"><div class="timeline-year">1971 – 1983</div><h4>Foundations in Education</h4><p>Asuafu Salvation Army Primary School, Asuafu L/A Middle School and Nsutaman Catholic Secondary School.</p></div>
-        <div class="timeline-item"><div class="timeline-year">1984 – 1986</div><h4>Sixth Form Education</h4><p>Tweneboa Kodua Secondary School, where he obtained the G.C.E. 'A' Level Certificate.</p></div>
-        <div class="timeline-item"><div class="timeline-year">1989 – 1997</div><h4>University of Ghana &amp; University of Cape Coast</h4><p>B.A. Hons in Political Science with Philosophy, followed by a Post Graduate Diploma of Education.</p></div>
-        <div class="timeline-item"><div class="timeline-year">1993 – 2011</div><h4>Teaching &amp; School Leadership</h4><p>Served at Yeji Secondary Technical School and Seventh-Day Adventist Senior Secondary School at Agona, taking on teaching and leadership responsibilities.</p></div>
-        <div class="timeline-item"><div class="timeline-year">2011 – 2019</div><h4>Senior Administration</h4><p>Served as Assistant Headmaster at Konadu Yiadom SHS and Konongo-Odumase SHS, and later as substantive Headmaster of Denyaeman Catholic SHS.</p></div>
-        <div class="timeline-item"><div class="timeline-year">17 December 2019</div><h4>Okomfo Anokye Senior High School</h4><p>Reassigned to Okomfo Anokye Senior High School as substantive Headmaster, a responsibility recorded in the profile as continuing up to date.</p></div>
+      <div class="hero-date">
+        <strong>09</strong><span>October · 2026</span>
       </div>
-      <div class="credential-grid">
-        <article class="credential-card"><h3>Academic Qualifications</h3><ul><li>B.A. Hons, Political Science with Philosophy — University of Ghana, 1992.</li><li>Post Graduate Diploma of Education — University of Cape Coast, completed 1997.</li><li>M.Ed. Educational Administration — University of Cape Coast, completed 2015.</li></ul></article>
-        <article class="credential-card"><h3>Ranks Held</h3><div class="rank-list"><strong>1993</strong><span>Superintendent</span><strong>1996</strong><span>Senior Superintendent</span><strong>2001</strong><span>Principal Superintendent</span><strong>2006</strong><span>Assistant Director II</span><strong>2010</strong><span>Assistant Director I</span><strong>2015</strong><span>Deputy Director</span></div></article>
-        <article class="credential-card"><h3>Research &amp; Publications</h3><p>Three unpublished dissertations are recorded in the official profile, including work on local government administration, teaching Government in Senior Secondary Schools, and supervision of teaching and learning.</p><p style="margin-top:10px"><strong>Publications:</strong> <em>Millennium Government for Senior Secondary Schools</em> and <em>Millennium Government — Questions and Answers.</em></p></article>
-        <article class="credential-card"><h3>Community &amp; Examination Service</h3><p>Community service includes leadership roles at Legon Hall Annex B and SDA Senior High School Agona-Ashanti, as well as NAGRAT Chairman for the Agona Zone. The profile also records WAEC/WASSCE supervision from 2011 and examiner/vetter service for Government from 2005–2024.</p></article>
+      <div class="scroll">Discover the celebration ↓</div>
+    </header>
+
+    <main>
+      <section class="section invitation" id="invitation">
+        <div class="wrap inv-grid reveal">
+          <div class="inv-copy">
+            <div class="kicker-dark">A cordial invitation</div>
+            <h2 class="title">Come and share<br />this special moment.</h2>
+            <div class="ornament">✦ ───────── ✦</div>
+            <p>
+              The Board of Governors, Nananom, PTA, Assistant
+              Headmasters/Mistress, Staff, Old Students and Students of Okomfo
+              Anokye Senior High School cordially invite you to an occasion of
+              appreciation, thanksgiving and celebration.
+            </p>
+            <p>
+              Join us as we honour a chapter of dedicated leadership and
+              service. Come with your greetings, your memories and your good
+              wishes—and help us make this occasion truly memorable.
+            </p>
+            <div class="quote">
+              “Some journeys deserve to be celebrated, and some service deserves
+              to be remembered.”
+            </div>
+          </div>
+          <aside class="info-panel">
+            <h3>Save the<br />date.</h3>
+            <div class="info-list">
+              <div class="info-row">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                  <small>Date</small><strong>Friday, 9th October 2026</strong>
+                </div>
+              </div>
+              <div class="info-row">
+                <i class="fa-regular fa-clock"></i>
+                <div><small>Time</small><strong>9:00 AM</strong></div>
+              </div>
+              <div class="info-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <small>Venue</small
+                  ><strong>Okomfo Anokye Senior High School, Wiamoase</strong>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div class="wrap profile-grid reveal">
+          <div class="portrait-wrap">
+            <img
+              src="assets/formal-portrait.jpg"
+              alt="Formal portrait of Mr. Boakye Yiadom Boama"
+            />
+          </div>
+          <div class="profile-copy">
+            <div class="kicker-dark">In honour of · Profile</div>
+            <h2 class="title">Mr. Boakye<br />Yiadom Boama</h2>
+            <p class="profile-intro">
+              A life shaped by humble beginnings, education, service, leadership
+              and a deep commitment to Catholic values.
+            </p>
+            <p>
+              Mr. Boakye Yiadom Boama was born on 21 October 1966 to the late
+              Maame Afia Pomaa of Nsuta Asuafu and the late Papa Akwasi Tetewu
+              Boateng of Sekyere Beposo. He is the third of nine siblings,
+              married to Mrs. Hanna Adu Boakye, and a father of eight children.
+            </p>
+            <p>
+              His educational journey began at Asuafu Salvation Army Primary
+              School, continued through Asuafu L/A Middle School and Nsutaman
+              Catholic Secondary School, and later led him to Tweneboa Kodua
+              Secondary School for sixth-form education.
+            </p>
+            <div class="fact-grid">
+              <div class="fact">
+                <strong>1966</strong><span>Year of birth</span>
+              </div>
+              <div class="fact">
+                <strong>1993</strong><span>Joined Ghana Education Service</span>
+              </div>
+              <div class="fact">
+                <strong>2019</strong><span>Joined OASHS as Headmaster</span>
+              </div>
+            </div>
+            <div class="signature">With gratitude &amp; appreciation</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials" id="legacy">
+        <div class="wrap reveal">
+          <div class="kicker-dark">A distinguished journey</div>
+          <h2 class="title">Education, leadership<br />&amp; service.</h2>
+          <p class="lead">
+            The official profile records a career spanning classroom teaching,
+            school administration, educational research, examination service and
+            community leadership.
+          </p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">1971 – 1983</div>
+              <h4>Foundations in Education</h4>
+              <p>
+                Asuafu Salvation Army Primary School, Asuafu L/A Middle School
+                and Nsutaman Catholic Secondary School.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1984 – 1986</div>
+              <h4>Sixth Form Education</h4>
+              <p>
+                Tweneboa Kodua Secondary School, where he obtained the G.C.E.
+                'A' Level Certificate.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1989 – 1997</div>
+              <h4>University of Ghana &amp; University of Cape Coast</h4>
+              <p>
+                B.A. Hons in Political Science with Philosophy, followed by a
+                Post Graduate Diploma of Education.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1993 – 2011</div>
+              <h4>Teaching &amp; School Leadership</h4>
+              <p>
+                Served at Yeji Secondary Technical School and Seventh-Day
+                Adventist Senior Secondary School at Agona, taking on teaching
+                and leadership responsibilities.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2011 – 2019</div>
+              <h4>Senior Administration</h4>
+              <p>
+                Served as Assistant Headmaster at Konadu Yiadom SHS and
+                Konongo-Odumase SHS, and later as substantive Headmaster of
+                Denyaseman Catholic SHS.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">17 December 2019</div>
+              <h4>Okomfo Anokye Senior High School</h4>
+              <p>
+                Reassigned to Okomfo Anokye Senior High School as substantive
+                Headmaster, a responsibility recorded in the profile as
+                continuing up to date.
+              </p>
+            </div>
+          </div>
+          <div class="credential-grid">
+            <article class="credential-card">
+              <h3>Academic Qualifications</h3>
+              <ul>
+                <li>
+                  B.A. Hons, Political Science with Philosophy — University of
+                  Ghana, 1992.
+                </li>
+                <li>
+                  Post Graduate Diploma of Education — University of Cape Coast,
+                  completed 1997.
+                </li>
+                <li>
+                  M.Ed. Educational Administration — University of Cape Coast,
+                  completed 2015.
+                </li>
+              </ul>
+            </article>
+            <article class="credential-card">
+              <h3>Ranks Held</h3>
+              <div class="rank-list">
+                <strong>1993</strong><span>Superintendent</span
+                ><strong>1996</strong><span>Senior Superintendent</span
+                ><strong>2001</strong><span>Principal Superintendent</span
+                ><strong>2006</strong><span>Assistant Director II</span
+                ><strong>2010</strong><span>Assistant Director I</span
+                ><strong>2015</strong><span>Deputy Director</span>
+              </div>
+            </article>
+            <article class="credential-card">
+              <h3>Research &amp; Publications</h3>
+              <p>
+                Three unpublished dissertations are recorded in the official
+                profile, including work on local government administration,
+                teaching Government in Senior Secondary Schools, and supervision
+                of teaching and learning.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Publications:</strong>
+                <em>Millennium Government for Senior Secondary Schools</em> and
+                <em>Millennium Government — Questions and Answers.</em>
+              </p>
+            </article>
+            <article class="credential-card">
+              <h3>Community &amp; Examination Service</h3>
+              <p>
+                Community service includes leadership roles at Legon Hall Annex
+                B and SDA Senior High School Agona-Ashanti, as well as NAGRAT
+                Chairman for the Agona Zone. The profile also records
+                WAEC/WASSCE supervision from 2011 and examiner/vetter service
+                for Government from 2005–2024.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="wrap reveal">
+          <div class="gallery-top">
+            <div>
+              <div class="kicker-dark">Moments of a journey</div>
+              <h2 class="title">A celebration<br />of memories.</h2>
+            </div>
+            <p class="lead">
+              A visual tribute to a memorable occasion and the man at its
+              centre.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item large">
+              <img src="assets/family-kente.jpg" alt="Family portrait" />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/kente-close.jpg"
+                alt="Traditional attire portrait"
+              />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/formal-full.jpg" alt="Formal portrait" />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/kente-full.jpg"
+                alt="Traditional attire portrait"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/kente-alt.jpg"
+                alt="Traditional attire portrait"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section programme" id="programme">
+        <div class="wrap reveal">
+          <div class="programme-heading">
+            <div>
+              <div class="kicker-dark">Official Programme Line-Up</div>
+              <h2 class="title">
+                A day of honour,<br />ceremony &amp; celebration.
+              </h2>
+            </div>
+            <p class="lead">
+              Please join us throughout the programme as we celebrate a legacy
+              of dedicated service.
+            </p>
+          </div>
+          <div class="programme-list">
+            <article class="programme-part">
+              <div class="part-number">01</div>
+              <div class="part-body">
+                <div class="part-title">Arrival &amp; Ceremonial Reception</div>
+                <ol>
+                  <li>Arrival of Dignitaries</li>
+                  <li>Opening Prayer – Rev. Edward Kofi Mensah</li>
+                  <li>Procession to the Grounds</li>
+                  <li>Cadet Corps Display</li>
+                  <li>Inspection of the Guard of Honour</li>
+                </ol>
+              </div>
+            </article>
+            <article class="programme-part">
+              <div class="part-number">02</div>
+              <div class="part-body">
+                <div class="part-title">Catholic Mass Service</div>
+                <ol>
+                  <li>Catholic Mass Service</li>
+                </ol>
+              </div>
+            </article>
+            <article class="programme-part">
+              <div class="part-number">03</div>
+              <div class="part-body">
+                <div class="part-title">Main Ceremony</div>
+                <ol>
+                  <li>
+                    Introduction of the Chairman and Dignitaries – Madam Rahel
+                    Aboagyewaa
+                  </li>
+                  <li>Musical Interlude – School Choir</li>
+                  <li>Chairman’s Response</li>
+                  <li>School Anthem – Cadet</li>
+                  <li>Purpose of the Gathering – MC</li>
+                  <li>Musical Interlude – Cadet</li>
+                  <li>Headmaster’s Profile – Miss Rhoda Omenah Sarfo</li>
+                  <li>LG Performance</li>
+                  <li>
+                    Optional Speeches
+                    <ul>
+                      <li>Clergy</li>
+                      <li>District/Regional Director</li>
+                      <li>MCE/MP</li>
+                      <li>CHASS</li>
+                      <li>Staff</li>
+                      <li>Nananom</li>
+                      <li>Family</li>
+                      <li>Students</li>
+                    </ul>
+                  </li>
+                  <li>Drummers’ Appellation</li>
+                </ol>
+              </div>
+            </article>
+            <article class="programme-part">
+              <div class="part-number">04</div>
+              <div class="part-body">
+                <div class="part-title">Closing Session</div>
+                <ol>
+                  <li>Headmaster’s Speech</li>
+                  <li>Presentation of Gifts</li>
+                  <li>Chairman’s Closing Remarks</li>
+                  <li>Vote of Thanks – Madam Hannah Boansi</li>
+                  <li>Closing Prayer – Rev. Edward Kofi Mensah</li>
+                  <li>Announcements</li>
+                  <li>Refreshment</li>
+                  <li>Departure</li>
+                </ol>
+              </div>
+            </article>
+          </div>
+          <div class="mc-strip">
+            <small>Masters of Ceremony</small
+            ><strong
+              >Naiza Agyei Kyeremateng · Agyei Mensah Isaac · Michael Boakye
+              Yiadom</strong
+            >
+          </div>
+          <div class="programme-footer">
+            <i class="fa-solid fa-heart"></i> Thank you for joining us to
+            celebrate a legacy of dedicated service.
+          </div>
+        </div>
+      </section>
+
+      <section class="section official">
+        <div class="wrap official-grid reveal">
+          <div class="official-copy">
+            <div class="kicker" style="color: var(--gold2)">
+              Official invitation
+            </div>
+            <h2 class="title">All the details,<br />in one place.</h2>
+            <p>
+              Please refer to the official ceremony flyer for the formal
+              invitation and event information. We look forward to welcoming
+              you.
+            </p>
+          </div>
+          <div class="flyer">
+            <img
+              src="assets/official-flyer.png"
+              alt="Official End of Service and Thanksgiving Ceremony flyer"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section final" id="rsvp">
+        <div class="wrap reveal">
+          <div class="kicker-dark">We look forward to welcoming you</div>
+          <h2 class="title">
+            Your presence will make<br />the celebration complete.
+          </h2>
+          <p>
+            Kindly confirm your attendance and join us at Okomfo Anokye Senior
+            High School, Wiamoase, as we gather in gratitude, honour and
+            thanksgiving.
+          </p>
+          <div class="rsvp">
+            <a class="btn btn-gold" href="tel:+233244756636"
+              ><i class="fa-solid fa-phone"></i> Acheampong</a
+            ><a class="btn btn-gold" href="tel:+233243360599"
+              ><i class="fa-solid fa-phone"></i> Larbi</a
+            ><a class="btn btn-gold" href="tel:+233541574526"
+              ><i class="fa-solid fa-phone"></i> Anane</a
+            ><a
+              class="btn"
+              style="background: var(--forest); color: #fff"
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Okomfo%20Anokye%20Senior%20High%20School%2C%20Wiamoase"
+              ><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a
+            >
+          </div>
+          <div class="contact">
+            <span><i class="fa-solid fa-phone"></i> 0244756636</span
+            ><span><i class="fa-solid fa-phone"></i> 0243360599</span
+            ><span><i class="fa-solid fa-phone"></i> 0541574526</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer">
+        <div><strong>Okomfo Anokye Senior High School</strong> · Wiamoase</div>
+        <div>End of Service &amp; Thanksgiving Ceremony · 9 October 2026</div>
       </div>
-    </div></section>
+    </footer>
+    <a class="top" id="topBtn" href="#top" aria-label="Back to top"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
 
-    <section class="section gallery" id="gallery"><div class="wrap reveal"><div class="gallery-top"><div><div class="kicker-dark">Moments of a journey</div><h2 class="title">A celebration<br>of memories.</h2></div><p class="lead">A visual tribute to a memorable occasion and the man at its centre.</p></div>
-      <div class="gallery-grid"><div class="gallery-item large"><img src="assets/family-kente.jpg" alt="Family portrait"></div><div class="gallery-item"><img src="assets/kente-close.jpg" alt="Traditional attire portrait"></div><div class="gallery-item"><img src="assets/formal-full.jpg" alt="Formal portrait"></div><div class="gallery-item"><img src="assets/kente-full.jpg" alt="Traditional attire portrait"></div><div class="gallery-item"><img src="assets/kente-alt.jpg" alt="Traditional attire portrait"></div></div>
-    </div></section>
-
-    <section class="section programme" id="programme"><div class="wrap reveal">
-      <div class="programme-heading"><div><div class="kicker-dark">Official Programme Line-Up</div><h2 class="title">A day of honour,<br>ceremony &amp; celebration.</h2></div><p class="lead">Please join us throughout the programme as we celebrate a legacy of dedicated service.</p></div>
-      <div class="programme-list">
-        <article class="programme-part"><div class="part-number">01</div><div class="part-body"><div class="part-title">Arrival &amp; Ceremonial Reception</div><ol><li>Arrival of Dignitaries</li><li>Opening Prayer – Rev. Edward Kofi Mensah</li><li>Procession to the Grounds</li><li>Cadet Corps Display</li><li>Inspection of the Guard of Honour</li></ol></div></article>
-        <article class="programme-part"><div class="part-number">02</div><div class="part-body"><div class="part-title">Catholic Mass Service</div><ol><li>Catholic Mass Service</li></ol></div></article>
-        <article class="programme-part"><div class="part-number">03</div><div class="part-body"><div class="part-title">Main Ceremony</div><ol><li>Introduction of the Chairman and Dignitaries – Madam Rahel Aboagyewaa</li><li>Musical Interlude – School Choir</li><li>Chairman’s Response</li><li>School Anthem – Cadet</li><li>Purpose of the Gathering – MC</li><li>Musical Interlude – Cadet</li><li>Headmaster’s Profile – Miss Rhoda Omenah Sarfo</li><li>LG Performance</li><li>Optional Speeches<ul><li>Clergy</li><li>District/Regional Director</li><li>MCE/MP</li><li>CHASS</li><li>Staff</li><li>Nananom</li><li>Family</li><li>Students</li></ul></li><li>Drummers’ Appellation</li></ol></div></article>
-        <article class="programme-part"><div class="part-number">04</div><div class="part-body"><div class="part-title">Closing Session</div><ol><li>Headmaster’s Speech</li><li>Presentation of Gifts</li><li>Chairman’s Closing Remarks</li><li>Vote of Thanks – Madam Hannah Boansi</li><li>Closing Prayer – Rev. Edward Kofi Mensah</li><li>Announcements</li><li>Refreshment</li><li>Departure</li></ol></div></article>
-      </div>
-      <div class="mc-strip"><small>Masters of Ceremony</small><strong>Naiza Agyei Kyeremateng · Agyei Mensah Isaac · Michael Boakye Yiadom</strong></div>
-      <div class="programme-footer"><i class="fa-solid fa-heart"></i> Thank you for joining us to celebrate a legacy of dedicated service.</div>
-    </div></section>
-
-    <section class="section official"><div class="wrap official-grid reveal"><div class="official-copy"><div class="kicker" style="color:var(--gold2)">Official invitation</div><h2 class="title">All the details,<br>in one place.</h2><p>Please refer to the official ceremony flyer for the formal invitation and event information. We look forward to welcoming you.</p></div><div class="flyer"><img src="assets/official-flyer.png" alt="Official End of Service and Thanksgiving Ceremony flyer"></div></div></section>
-
-    <section class="section final" id="rsvp"><div class="wrap reveal"><div class="kicker-dark">We look forward to welcoming you</div><h2 class="title">Your presence will make<br>the celebration complete.</h2><p>Kindly confirm your attendance and join us at Okomfo Anokye Senior High School, Wiamoase, as we gather in gratitude, honour and thanksgiving.</p>
-      <div class="rsvp"><a class="btn btn-gold" href="tel:+233244756636"><i class="fa-solid fa-phone"></i> Acheampong</a><a class="btn btn-gold" href="tel:+233243360599"><i class="fa-solid fa-phone"></i> Larbi</a><a class="btn btn-gold" href="tel:+233541574526"><i class="fa-solid fa-phone"></i> Anane</a><a class="btn" style="background:var(--forest);color:#fff" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Okomfo%20Anokye%20Senior%20High%20School%2C%20Wiamoase"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a></div>
-      <div class="contact"><span><i class="fa-solid fa-phone"></i> 0244756636</span><span><i class="fa-solid fa-phone"></i> 0243360599</span><span><i class="fa-solid fa-phone"></i> 0541574526</span></div>
-    </div></section>
-  </main>
-
-  <footer><div class="wrap footer"><div><strong>Okomfo Anokye Senior High School</strong> · Wiamoase</div><div>End of Service &amp; Thanksgiving Ceremony · 9 October 2026</div></div></footer>
-  <a class="top" id="topBtn" href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
-
-  <script>
-    const nav=document.getElementById('nav'), progress=document.getElementById('progress'), topBtn=document.getElementById('topBtn');
-    window.addEventListener('scroll',()=>{
-      nav.classList.toggle('scrolled',scrollY>40);
-      const total=document.documentElement.scrollHeight-innerHeight;
-      progress.style.width=total?`${scrollY/total*100}%`:'0%';
-      topBtn.classList.toggle('show',scrollY>600);
-    });
-    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.10});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-    const menuBtn=document.getElementById('menuBtn'), mobileMenu=document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
-    mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-  </script>
-</body>
+    <script>
+      const nav = document.getElementById("nav"),
+        progress = document.getElementById("progress"),
+        topBtn = document.getElementById("topBtn");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", scrollY > 40);
+        const total = document.documentElement.scrollHeight - innerHeight;
+        progress.style.width = total ? `${(scrollY / total) * 100}%` : "0%";
+        topBtn.classList.toggle("show", scrollY > 600);
+      });
+      const observer = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          }),
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+      const menuBtn = document.getElementById("menuBtn"),
+        mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () =>
+        mobileMenu.classList.toggle("open"),
+      );
+      mobileMenu
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () =>
+            mobileMenu.classList.remove("open"),
+          ),
+        );
+    </script>
+  </body>
 </html>
